@@ -249,7 +249,7 @@ function handlePlan(event, plan) {
                 slides[i].setAttribute("onmouseleave", `handlePlan(event, ${slides[i].id})`);
             }
             for (i = 0; i < arrows.length; i++) {
-                arrows[i].style.display = "block";
+                arrows[i].style.display = "none";
             }
         }
     }
