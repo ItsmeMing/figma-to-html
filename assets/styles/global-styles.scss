@@ -1,0 +1,32 @@
+:root {
+    --primary: #ef776a;
+    --center: 0 auto;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%; /* 10px */
+    line-height: 1.6rem;
+    box-sizing: border-box;
+    margin: auto;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    text-rendering: optimizeSpeed;
+    overflow: hidden;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 1440px;
+    position: relative;
+    margin: 0 auto;
+}

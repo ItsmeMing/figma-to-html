@@ -1,0 +1,454 @@
+@import "./variables.scss";
+
+.banner-wrapper {
+    position: relative;
+    height: auto;
+    margin: 0 auto;
+    .banner {
+        position: relative;
+        display: flex;
+        padding-top: 210px;
+        width: 100%;
+        max-width: 1180px; //1292px;
+        height: auto;
+        z-index: 2;
+        .banner-item {
+            .slogan {
+                font-weight: 700;
+                font-size: 70px;
+                line-height: 90px;
+            }
+            .curved-line {
+                width: 100%;
+                height: 70px;
+                border: solid 8px $greenColor;
+                border-color: $greenColor transparent transparent transparent;
+                border-radius: 100%/100px 100px 0 0;
+                margin-top: 40px;
+            }
+            .banner-text {
+                max-width: 450px;
+                margin-bottom: 50px;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 30px;
+            }
+            .banner-button-list {
+                list-style-type: none;
+                overflow: hidden;
+                margin: 0;
+                padding: 0;
+                .banner-button-item {
+                    float: left;
+
+                    &:last-child {
+                        width: 172px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        padding: 10px 10px;
+                        margin-left: 40px;
+                        font-size: 18px;
+                        font-weight: 500;
+                        line-height: 22px;
+                        border: 1px solid transparent;
+                        border-radius: 40px;
+                    }
+
+                    &:last-child:hover {
+                        border: 1px solid $greenColor;
+                        border-radius: 40px;
+                        * {
+                            color: $greenColor;
+                        }
+                    }
+                    .banner-button {
+                        font-weight: 500;
+                        font-size: 18px;
+                        line-height: 22px;
+                        background-color: $greenColor;
+                        padding: 20px 30px;
+                        border: none;
+                        border-radius: 40px;
+                        color: #ffffff;
+                        &:hover {
+                            color: $blackColor;
+                        }
+                    }
+                }
+            }
+        }
+        .banner-image {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .banner-proves {
+        padding: 100px 0;
+        margin: 0 auto;
+        .prove-text {
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 48.41px;
+            margin-bottom: 80px;
+            text-align: center;
+        }
+        .prove-list {
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            padding-left: 0;
+            position: relative;
+            overflow: hidden;
+            .prove-item {
+                padding: 0 25px;
+                display: flex;
+                align-items: center;
+                &:first-child {
+                    padding-left: 0;
+                }
+                &:last-child {
+                    padding-right: 0;
+                }
+                img {
+                    width: 30px;
+                    height: 30px;
+                }
+                .brand-name {
+                    font-weight: 600;
+                    font-size: 30px;
+                    line-height: 36.31px;
+                    color: $greyColor;
+                    padding-left: 10px;
+                    margin-bottom: 0;
+                }
+            }
+            .prove-item.reset {
+                transition: none;
+            }
+            .prove-item.reset2 {
+                transition: all 0.375s;
+            }
+            .p-arrow {
+                display: none;
+                position: absolute;
+                top: 28%;
+                font-size: 24px;
+                color: #a01360;
+                padding: 9px 15px;
+                transition: all 0.5s;
+                border-radius: 100%;
+                &:hover {
+                    color: #ffffff;
+                    background-color: #a01360;
+                }
+                &:active {
+                    opacity: 0.5;
+                }
+            }
+            .prev.p-arrow {
+                left: 0;
+            }
+            .next.p-arrow {
+                right: 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 575.98px) {
+    .banner-wrapper {
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+        .banner {
+            max-width: 1180px; //1292px;
+            padding-top: 100px;
+            .banner-item {
+                &:first-child {
+                    margin-bottom: 100px;
+                }
+                .slogan {
+                    font-size: 40px;
+                    line-height: 60px;
+                }
+                .curved-line {
+                    margin-top: 40px;
+                    height: 80px;
+                }
+                .banner-text {
+                    max-width: 90%;
+                    margin: 0 auto;
+                    text-align: center;
+                    margin-bottom: 50px;
+                    font-size: 14px;
+                    line-height: 26px;
+                }
+                .banner-button-list {
+                    display: flex;
+                    justify-content: center;
+                    margin: 0 auto;
+                    .banner-button-item {
+                        float: unset;
+                        &:last-child {
+                            padding: 0;
+                            width: 130px;
+                            font-size: 14px;
+                        }
+                        .banner-button {
+                            padding: 10px 20px;
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+        .banner-proves {
+            padding: 60px 0;
+            .prove-text {
+                font-size: 17px;
+                line-height: 45px;
+                margin-bottom: 0;
+            }
+            .prove-list {
+                justify-content: flex-start;
+                .prove-item {
+                    flex: 0 0 100%;
+                    justify-content: center;
+                    margin: 0 auto;
+                    padding: 25px 0;
+                    transition: all 0.5s;
+                    img {
+                        width: 30px;
+                        height: 30px;
+                    }
+                    .brand-name {             
+                        font-size: 20px;
+                        margin-left: 10px;
+                    }
+                    @for $var from 0 to 5 {
+                        &:nth-child(#{$var + 1}) {
+                            transform: translateX($var * 100%);
+                        }
+                    }
+                }
+                .p-arrow {
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .banner-wrapper {
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+        .banner {
+            max-width: 1180px; //1292px;
+            padding-top: 120px;
+            .banner-item {
+                &:first-child {
+                    margin-bottom: 100px;
+                }
+                .slogan {
+                    font-size: 50px;
+                    line-height: 70px;
+                }
+                .curved-line {
+                    margin-top: 40px;
+                    height: 80px;
+                }
+                .banner-text {
+                    max-width: 90%;
+                    margin: 0 auto;
+                    text-align: center;
+                    margin-bottom: 30px;
+                    font-size: 15px;
+                    line-height: 28px;
+                }
+                .banner-button-list {
+                    display: flex;
+                    justify-content: center;
+                    margin: 0 auto;
+                    .banner-button-item {
+                        float: unset;
+                        &:last-child {
+                            width: 160px;
+                            font-size: 16px;
+                        }
+                        .banner-button {
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+        .banner-proves {
+            padding: 60px 0;
+            .prove-text {
+                font-size: 24px;
+                line-height: 45px;
+                margin-bottom: 10px;
+            }
+            .prove-list {
+                justify-content: flex-start;
+                .prove-item {
+                    flex: 0 0 100%;
+                    justify-content: center;
+                    margin: 0 auto;
+                    padding: 25px 0;
+                    transition: all 0.5s;
+                    img {
+                        width: 40px;
+                        height: 40px;
+                    }
+                    .brand-name {
+                        font-size: 24px;
+                        margin-left: 10px;
+                    }
+                    @for $var from 0 to 5 {
+                        &:nth-child(#{$var + 1}) {
+                            transform: translateX($var * 100%);
+                        }
+                    }
+                }
+                .p-arrow {
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .banner-wrapper {
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+        .banner {
+            max-width: 1180px; //1292px;
+            padding-top: 130px;
+            .banner-item {
+                &:first-child {
+                    margin-bottom: 100px;
+                }
+                .slogan {
+                    font-size: 56px;
+                    line-height: 75px;
+                }
+                .curved-line {
+                    margin-top: 40px;
+                    height: 80px;
+                }
+                .banner-text {
+                    max-width: 90%;
+                    margin: 0 auto;
+                    text-align: center;
+                    margin-bottom: 30px;
+                    font-size: 15px;
+                    line-height: 28px;
+                }
+                .banner-button-list {
+                    display: flex;
+                    justify-content: center;
+                    margin: 0 auto;
+                    .banner-button-item {
+                        float: unset;
+                        &:last-child {
+                            width: 160px;
+                            font-size: 16px;
+                        }
+                        .banner-button {
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+        .banner-proves {
+            padding: 80px 0;
+            .prove-text {
+                font-size: 30px;
+                line-height: 45px;
+                margin-bottom: 50px;
+            }
+            .prove-list {
+                .prove-item {
+                    padding: 0 9px;
+                    img {
+                        width: 23px;
+                        height: 23px;
+                    }
+                    .brand-name {
+                        font-size: 22px;
+                        padding-left: 0;
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 991.98px) {
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .banner-wrapper {
+        .banner {
+            max-width: 1180px; //1292px;
+            padding-top: 150px;
+            .banner-item {
+                .slogan {
+                    font-size: 56px;
+                    line-height: 75px;
+                }
+                .curved-line {
+                    margin-top: 30px;
+                }
+                .banner-text {
+                    margin-bottom: 30px;
+                    font-size: 15px;
+                    line-height: 28px;
+                }
+                .banner-button-list {
+                    .banner-button-item {
+                        &:last-child {
+                            width: 160px;
+                            font-size: 16px;
+                        }
+                        .banner-button {
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+        .banner-proves {
+            padding: 80px 0;
+            .prove-text {
+                font-size: 36px;
+                line-height: 45px;
+                margin-bottom: 70px;
+            }
+            .prove-list {
+                .prove-item {
+                    padding: 0 9px;
+                    img {
+                        width: 25px;
+                        height: 25px;
+                    }
+                    .brand-name {
+                        font-size: 28px;
+                        line-height: 35px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+}

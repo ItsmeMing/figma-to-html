@@ -1,0 +1,207 @@
+.login-wrapper {
+  width: 390px;
+  height: 600px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.05);
+  border-radius: 20px;
+  display: flex;
+  overflow: hidden;
+  position: fixed;
+  z-index: 99999;
+  left: 0;
+  right: 0;
+  transform: translateY(-100%);
+  transition: all 0.5s;
+}
+.login-wrapper .login-container {
+  transition: opacity 0.5s ease-out;
+  height: 100%;
+  min-width: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  transition: all 0.5s;
+}
+.login-wrapper .login-container .login {
+  margin: 0 auto;
+}
+.login-wrapper .login-container .login .form-name {
+  font-weight: 600;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #54BD95;
+}
+.login-wrapper .login-container .login .email-input,
+.login-wrapper .login-container .login .password-input {
+  width: 75%;
+  height: 50px;
+  border: none;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.05);
+  padding: 20px 15px;
+  margin-bottom: 20px;
+}
+.login-wrapper .login-container .login .email-input:focus-visible,
+.login-wrapper .login-container .login .password-input:focus-visible {
+  outline: none;
+}
+.login-wrapper .login-container .login ::-moz-placeholder {
+  font-weight: bold;
+  font-size: 11px;
+  color: #54BD95;
+}
+.login-wrapper .login-container .login :-ms-input-placeholder {
+  font-weight: bold;
+  font-size: 11px;
+  color: #54BD95;
+}
+.login-wrapper .login-container .login ::placeholder {
+  font-weight: bold;
+  font-size: 11px;
+  color: #54BD95;
+}
+.login-wrapper .login-container .login .button {
+  font-weight: 700;
+  font-size: 12px;
+  background-color: #54BD95;
+  box-shadow: 0 10px 30px 0 #07eb9f;
+  min-width: 160px;
+  height: 50px;
+  padding: 0 20px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 25px;
+  color: #fff;
+  transition: all 0.4s;
+}
+.login-wrapper .login-container .login .button:hover {
+  background-color: #03744e;
+}
+.login-wrapper .login-container .login .login-methods-wrapper {
+  margin: 40px 0;
+}
+.login-wrapper .login-container .login .login-methods-wrapper .login-methods-text {
+  font-weight: 500;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.login-wrapper .login-container .login .login-methods-wrapper .login-methods {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login-wrapper .login-container .login .login-methods-wrapper .login-methods .login-method {
+  margin: 0 5px;
+  display: block;
+  background-color: #ffffff;
+  border-radius: 100%;
+  box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.05);
+  transition: all 0.5s;
+}
+.login-wrapper .login-container .login .login-methods-wrapper .login-methods .login-method:hover {
+  color: #ffffff;
+  background-color: #4b2354;
+}
+.login-wrapper .login-container .login .login-methods-wrapper .login-methods .login-method.fa-facebook-f {
+  padding: 10px 13px;
+}
+.login-wrapper .login-container .login .login-methods-wrapper .login-methods .login-method.fa-google {
+  padding: 10px 10.375px;
+}
+.login-wrapper .login-container .login .sign-up-button {
+  display: block;
+  margin: 60px auto 0 auto;
+  border: none;
+  background-color: #ffffff;
+}
+.login-wrapper .login-container .login .sign-up-button:hover {
+  text-decoration: underline;
+}
+.login-wrapper .signup-container {
+  height: 100%;
+  min-width: 100%;
+  text-align: center;
+  padding-top: 56px;
+  position: relative;
+  transition: all 0.5s;
+}
+.login-wrapper .signup-container .go-back {
+  position: absolute;
+  left: 5%;
+  top: 3%;
+  padding: 7px 10px;
+  border-radius: 100%;
+  color: #ffffff;
+  background-color: #bd59d4;
+  box-shadow: 0 10px 30px 0 rgba(189, 89, 212, 0.5);
+  transition: all 0.5s;
+}
+.login-wrapper .signup-container .go-back:hover {
+  background-color: #4b2354;
+}
+.login-wrapper .signup-container .signup .form-name {
+  font-weight: 600;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #4b2354;
+}
+.login-wrapper .signup-container .signup .email-input,
+.login-wrapper .signup-container .signup .password-input {
+  width: 75%;
+  height: 50px;
+  border: none;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.05);
+  padding: 20px 15px;
+  margin-bottom: 20px;
+}
+.login-wrapper .signup-container .signup .email-input:focus-visible,
+.login-wrapper .signup-container .signup .password-input:focus-visible {
+  outline: none;
+}
+.login-wrapper .signup-container .signup ::-moz-placeholder {
+  font-weight: bold;
+  font-size: 11px;
+  color: #4b2354;
+}
+.login-wrapper .signup-container .signup :-ms-input-placeholder {
+  font-weight: bold;
+  font-size: 11px;
+  color: #4b2354;
+}
+.login-wrapper .signup-container .signup ::placeholder {
+  font-weight: bold;
+  font-size: 11px;
+  color: #4b2354;
+}
+.login-wrapper .signup-container .signup .button {
+  font-weight: 700;
+  font-size: 12px;
+  background-color: #bd59d4;
+  box-shadow: 0 10px 30px 0 rgba(189, 89, 212, 0.5);
+  min-width: 160px;
+  height: 50px;
+  padding: 0 20px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 25px;
+  color: #fff;
+  transition: all 0.4s;
+}
+.login-wrapper .signup-container .signup .button:hover {
+  background-color: #4b2354;
+}
+
+@media (max-width: 575.98px) {
+  .login-wrapper {
+    width: 100%;
+    height: 550px;
+    box-shadow: none;
+    border-radius: 0px;
+  }
+}/*# sourceMappingURL=loginform.css.map */

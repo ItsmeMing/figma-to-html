@@ -1,0 +1,16 @@
+{
+    "prettier.embeddedLanguageFormatting": "auto",
+    "prettier.enable": true,
+    "prettier.tabWidth": 4,
+    "prettier.proseWrap": "preserve",
+    "prettier.endOfLine": "lf",
+    "prettier.arrowParens": "always",
+    "prettier.semi": true,
+    "prettier.trailingComma": "es5",
+    "prettier.requireConfig": false,
+    "prettier.requirePragma": false,
+    "prettier.singleQuote": false,
+    "prettier.jsxBracketSameLine": false,
+    "prettier.bracketSpacing": true,
+    "prettier.printWidth": 120
+}

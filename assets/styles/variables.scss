@@ -1,0 +1,16 @@
+$greenColor: #54BD95;
+$blackColor: #191A15;
+$greyColor: #A6A6A6;
+
+
+@mixin circleEffect($bgColor, $left, $top) {
+    width: 634px;
+    height: 634px;
+    border-radius: 100%;
+    position: absolute;
+    z-index: 1;
+    filter: blur(1000px);
+    background-color: $bgColor;
+    left: $left;
+    top: $top;
+}

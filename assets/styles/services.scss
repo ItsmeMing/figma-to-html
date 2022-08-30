@@ -1,0 +1,347 @@
+@import "./variables.scss";
+
+.services-wrapper {
+  width: 100%;
+  background-color: #f9f8fe;
+  position: relative;
+  z-index: 9;
+  .services {
+    .services-item {
+      padding: 60px 0;
+      &:first-child {
+        padding-right: 15px;
+      }
+      &:last-child {
+        padding-left: 15px;
+      }
+      .services-text {
+        font-weight: 600;
+        font-size: 50px;
+        line-height: 60.5px;
+      }
+      .serivces-explain {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 30px;
+        color: $greyColor;
+        padding: 30px 0;
+      }
+      .services-rating {
+        display: flex;
+        .rating-list {
+          list-style: none;
+          &:last-child {
+            padding-left: 80px;
+          }
+          .rating-item {
+            &:not(:last-child) {
+              padding-bottom: 18px;
+            }
+            .rating-point {
+              font-weight: 500;
+              font-size: 18px;
+              line-height: 21.78px;
+            }
+            .reviewer {
+              font-weight: 700;
+              font-size: 18px;
+              line-height: 21.78px;
+            }
+          }
+        }
+      }
+      .function-list {
+        list-style: none;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .function-item {
+          display: flex;
+          .function-image {
+            align-self: flex-start;
+            display: block;
+            max-width: 60px;
+            padding: 15px;
+            background-color: #ffffff;
+          }
+          .function-text {
+            margin-left: 20px;
+            .function-name {
+              font-weight: 700;
+              font-size: 28px;
+              line-height: 33.89px;
+              margin-bottom: 10px;
+            }
+            .function-description {
+              font-weight: 500;
+              font-size: 18px;
+              line-height: 30px;
+              color: $greyColor;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+  .services-wrapper {
+    width: 100%;
+    background-color: #f9f8fe;
+    .services {
+      width: 90%;
+      .services-item {
+        &:last-child {
+          padding: 0;
+        }
+        .services-text {
+          font-size: 40px;
+          text-align: center;
+        }
+        .serivces-explain {
+          font-size: 14px;
+          line-height: 26px;
+          text-align: center;
+        }
+        .services-rating {
+          justify-content: center;
+          .rating-list {
+            text-align: center;
+            .rating-item {
+              &:first-child > img {
+                width: 20px;
+                height: auto;
+              }
+              &:not(:last-child) {
+                padding-bottom: 13px;
+              }
+              .rating-point {
+                font-size: 14px;
+              }
+              .reviewer {
+                font-size: 14px;
+              }
+            }
+          }
+        }
+        .function-list {
+          .function-item {
+            width: 90%;
+            margin: 0 auto 50px auto;
+            .function-image {
+              padding: 10px;
+            }
+            .function-text {
+              margin-left: 30px;
+              .function-name {
+                font-weight: 700;
+                font-size: 23px;
+                margin-bottom: 5px;
+              }
+              .function-description {
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 22px;
+                color: $greyColor;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .services-wrapper {
+    width: 100%;
+    background-color: #f9f8fe;
+    .services {
+      width: 90%;
+      .services-item {
+        &:last-child {
+          padding: 0;
+        }
+        .services-text {
+          font-size: 44px;
+          text-align: center;
+        }
+        .serivces-explain {
+          font-size: 14px;
+          line-height: 28px;
+          text-align: center;
+        }
+        .services-rating {
+          justify-content: center;
+          .rating-list {
+            text-align: center;
+            .rating-item {
+              &:not(:last-child) {
+                padding-bottom: 16px;
+              }
+              .rating-point {
+                font-size: 15px;
+              }
+              .reviewer {
+                font-size: 15px;
+              }
+            }
+          }
+        }
+        .function-list {
+          .function-item {
+            width: 70%;
+            margin: 0 auto 40px auto;
+            .function-image {
+              padding: 10px;
+            }
+            .function-text {
+              margin-left: 30px;
+              .function-name {
+                font-weight: 700;
+                font-size: 23px;
+                margin-bottom: 5px;
+              }
+              .function-description {
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 22px;
+                color: $greyColor;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .services-wrapper {
+    width: 100%;
+    background-color: #f9f8fe;
+    .services {
+      width: 90%;
+      .services-item {
+        &:last-child {
+          padding: 0;
+        }
+        .services-text {
+          font-size: 48px;
+          text-align: center;
+        }
+        .serivces-explain {
+          font-size: 15px;
+          line-height: 30px;
+          text-align: center;
+        }
+        .services-rating {
+          justify-content: center;
+          .rating-list {
+            text-align: center;
+            .rating-item {
+              &:not(:last-child) {
+                padding-bottom: 16px;
+              }
+              .rating-point {
+                font-size: 16px;
+              }
+              .reviewer {
+                font-size: 16px;
+              }
+            }
+          }
+        }
+        .function-list {
+          .function-item {
+            width: 60%;
+            margin: 0 auto 40px auto;
+            .function-text {
+              margin-left: 30px;
+              .function-name {
+                font-weight: 700;
+                font-size: 24px;
+                margin-bottom: 5px;
+              }
+              .function-description {
+                font-weight: 500;
+                font-size: 15px;
+                line-height: 22px;
+                color: $greyColor;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .services-wrapper {
+    width: 100%;
+    background-color: #f9f8fe;
+    .services {
+      .services-item {
+        padding: 60px 0;
+        &:first-child {
+          padding-right: 15px;
+        }
+        &:last-child {
+          padding-left: 15px;
+        }
+        .services-text {
+          font-size: 44px;
+        }
+        .serivces-explain {
+          font-size: 14px;
+          line-height: 28px;
+        }
+        .services-rating {
+          .rating-list {
+            &:last-child {
+              padding-left: 60px;
+            }
+            .rating-item {
+              &:not(:last-child) {
+                padding-bottom: 16px;
+              }
+              .rating-point {
+                font-size: 16px;
+              }
+              .reviewer {
+                font-weight: 700;
+                font-size: 16px;
+              }
+            }
+          }
+        }
+        .function-list {
+          .function-item {
+            .function-image {
+              padding: 10px;
+            }
+            .function-text {
+              margin-left: 20px;
+              .function-name {
+                font-size: 24px;
+                margin-bottom: 5px;
+              }
+              .function-description {
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 25px;
+                color: $greyColor;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+}
