@@ -67,7 +67,7 @@
   font-weight: 700;
   font-size: 12px;
   background-color: #54BD95;
-  box-shadow: 0 10px 30px 0 #07eb9f;
+  box-shadow: 0 5px 30px 0 #07eb9f;
   min-width: 160px;
   height: 50px;
   padding: 0 20px;
@@ -103,7 +103,8 @@
 }
 .login-wrapper .login-container .login .login-methods-wrapper .login-methods .login-method:hover {
   color: #ffffff;
-  background-color: #4b2354;
+  background-color: #306E56;
+  cursor: pointer;
 }
 .login-wrapper .login-container .login .login-methods-wrapper .login-methods .login-method.fa-facebook-f {
   padding: 10px 13px;
@@ -135,19 +136,20 @@
   padding: 7px 10px;
   border-radius: 100%;
   color: #ffffff;
-  background-color: #bd59d4;
-  box-shadow: 0 10px 30px 0 rgba(189, 89, 212, 0.5);
+  background-color: #54BD95;
+  box-shadow: 0 10px 30px 0 rgba(48, 110, 86, 0.5);
   transition: all 0.5s;
 }
 .login-wrapper .signup-container .go-back:hover {
-  background-color: #4b2354;
+  background-color: #03744e;
+  cursor: pointer;
 }
 .login-wrapper .signup-container .signup .form-name {
   font-weight: 600;
   font-size: 30px;
   text-align: center;
   margin-bottom: 30px;
-  color: #4b2354;
+  color: #54BD95;
 }
 .login-wrapper .signup-container .signup .email-input,
 .login-wrapper .signup-container .signup .password-input {
@@ -167,23 +169,23 @@
 .login-wrapper .signup-container .signup ::-moz-placeholder {
   font-weight: bold;
   font-size: 11px;
-  color: #4b2354;
+  color: #54BD95;
 }
 .login-wrapper .signup-container .signup :-ms-input-placeholder {
   font-weight: bold;
   font-size: 11px;
-  color: #4b2354;
+  color: #54BD95;
 }
 .login-wrapper .signup-container .signup ::placeholder {
   font-weight: bold;
   font-size: 11px;
-  color: #4b2354;
+  color: #54BD95;
 }
 .login-wrapper .signup-container .signup .button {
   font-weight: 700;
   font-size: 12px;
-  background-color: #bd59d4;
-  box-shadow: 0 10px 30px 0 rgba(189, 89, 212, 0.5);
+  background-color: #54BD95;
+  box-shadow: 0 5px 30px 0 #07eb9f;
   min-width: 160px;
   height: 50px;
   padding: 0 20px;
@@ -194,7 +196,7 @@
   transition: all 0.4s;
 }
 .login-wrapper .signup-container .signup .button:hover {
-  background-color: #4b2354;
+  background-color: #03744e;
 }
 
 @media (max-width: 575.98px) {
