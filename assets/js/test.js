@@ -3,6 +3,11 @@ let fcount = 0;
 let pcount = 0; //set count cho slider
 
 // override container's width when screen size >= 1200px
+
+(function goToTop() {
+    window.scrollTo(0, 0);
+})();
+
 (function checkWidth() {
     const arr = [];
     function addImportant() {
